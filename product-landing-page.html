@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Premium Coffee Beans - Homepage</title>
+        <meta charset="utf-8"/>
+        <meta name='viewport' content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="https://kit.fontawesome.com/3866b416d4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo-container">
+                <img id="header-img" src='https://cdn4.vectorstock.com/i/1000x1000/06/48/coffee-beans-logo-vector-29470648.jpg' alt="coffee bean logo">
+                <h1 class="logo-text"><span class="bold">Premium</span><br/>Coffee Bean</h1>
+            </div>
+            <nav id="nav-bar">
+                <i class="fa-solid fa-bars nav-icon">
+                <ul class="nav-list">
+                    <li class="items">
+                        <a class="nav-link" href="#beans-content">Beans <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="beans-drpdown">
+                            <div id="beans-content">
+                                <a class="beans-type" href="#arabica">Arabica</a>
+                                <a class="beans-type" href="#robusta">Robusta</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items"><a class='nav-link' href="#roasting">Roasting Process</a></li>
+                    <li class="items"><a class='nav-link' href="#pricing-section">Pricing</a></li>
+                </ul>
+                </i>
+            </nav>
+        </header>
+        <main class="main-container">
+            <section class="form-section">
+                <img class='coffee-image' src="./img/high-quality-coffee-beans.jpeg" alt="a scoop of coffee beans"/>
+                <div class="overlapping-text-and-input">
+                    <h2 class="text">High quality, grown and harvested with proper procedures</h2>
+                    <div class="icons">
+                        <h3><i class="fa-solid fa-truck"></i> Fast Shipping</h3>
+                        <h3><i class="fa-solid fa-box-open"></i> Well Packed</h3>
+                        <h3><i class="fa-solid fa-seedling"></i> Fresh Beans</h3>
+                    </div>
+                    <form id='form' action="https://www.freecodecamp.com/email-submit">
+                    <input id='email' type="email" name='email' placeholder="Enter your email address" required/>
+                    <input id='submit' type="Submit" value="GET STARTED"/>
+                    </form>
+                </div>
+            </section>
+            <section class="beans-section">
+                 <div class="arabica-container">
+                    <img class='arabica-image' src="https://coffeeaffection.com/wp-content/uploads/2019/03/Arabica-coffee-bean-variety-e1594676072355.jpeg" alt="arabica beans"/>
+                    <h2 id="arabica">Arabica <span class="parenthesis">(less caffeine/low acid)</span></h2>
+                    <p class="description">Arabica beans are by far the most popular type of coffee beans, making up about 60% of the world’s coffee. These tasty beans originated
+                    many centuries ago in the highlands of Ethiopia, and may even be the first coffee beans ever consumed! The name Arabica likely comes from 
+                    the beans’ popularity in 7th-century Arabia (present-day Yemen).</p>
+                    <p class="description">The downside of Arabica beans is that they’re harder to grow. Because of this, Arabica beans are pricier. All coffee beans grow in the 
+                    so-called Bean Belt, an area between the Tropics of Cancer and Capricorn, in 50 countries around the world. But Arabica beans need extra 
+                    shade, water, and high altitude to grow properly. These plants are more susceptible to plant diseases and must be grown at an altitude of 
+                    at least 2,000 feet. They’re also smaller plants, measuring between 8 and 15 feet when fully grown.</p>
+                </div>
+                <div class="robusta-container">
+                    <img class='robusta-image' src="https://coffeeaffection.com/wp-content/uploads/2019/03/Whole-Robusta-coffee-beans-e1594676104619.jpeg" alt="robusta beans"/>
+                    <h2 id="robusta">Robusta <span class="parenthesis">(more caffeine/high acid)</span></h2>
+                    <p class="description">The second most popular type of coffee bean is Robusta. This bean originated in sub-Saharan Africa and is now grown primarily in Africa and Indonesia.
+                    It’s also particularly popular in Vietnam and is often mixed into coffee blends. It’s a less expensive variety, making it a very budget-friendly choice for roasters.</p>
+                    <p class="description">Many people think that Robusta coffee is harsher and more bitter. It often has a strong smell and a somewhat flat, almost burnt taste. Robusta beans also have 
+                    significantly more caffeine than Arabica beans. Though many fans of gourmet coffee turn up their noses at Robusta, we’d recommend trying it every once in a while.</p>
+                </div>
+            </section>
+            <section class="roasting-section">
+                <h2 id='roasting' class="text">Check out our roasting process.</h2>
+                <div class="video-wrapper">
+                    <iframe id="video" src="https://www.youtube.com/embed/xpcPm5F_AU0" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="pricing-section">
+                <div class="grid-display-wrapper">
+                    <div class="box-item">
+                        <h3 class="item-name">Premium Robusta</h3>
+                        <img class="image-bag" src="https://www.roastycoffee.com/wp-content/uploads/Lifeboost-Coffee-Bag.jpg" alt="250g of coffee beans"/>
+                        <h5 class="item-description">250g</h4>
+                        <h3 class="item-price">$40</h3>
+                    </div>
+                    <div class="box-item">
+                        <h3 class="item-name">Premium Arabica</h3>
+                        <img class="image-bag" src="https://www.roastycoffee.com/wp-content/uploads/Lifeboost-Coffee-Bag.jpg" alt="250g of coffee beans"/>
+                        <h5 class="item-description">250g</h4>
+                        <h3 class="item-price">$50</h3>
+                    </div>
+                    <div class="box-item">
+                        <h3 class="item-name">Mix</h3>
+                        <img class="image-bag" src="https://www.roastycoffee.com/wp-content/uploads/Lifeboost-Coffee-Bag.jpg" alt="250g of coffee beans"/>
+                        <h5 class="item-description">250g</h4>
+                        <h3 class="item-price">$60</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="unordered-list-wrapper">
+                <ul class="unordered-list">
+                    <li class="footer-list-item">Privacy</li>
+                    <li class="footer-list-item">Terms and condition</li>
+                    <li class="footer-list-item">Contact us</li>
+                </ul>
+                <p class="footer-text">Copyright 2022, Premium Coffee Beans</p>
+            </div>
+        </footer>
+    </body>
+</html>

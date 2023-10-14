@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(174, 166, 152);
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+/*----------------NAVIGATION BAR-----------------*/
+#header {
+    width: 90%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 15px 20px -25px;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    z-index: 1;
+}
+
+.logo-container {
+    width: 250px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.logo-text {
+   position: absolute;
+   left: 45%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+}
+
+.logo-text .bold {
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-left: 4px;
+    background-color: rgb(59, 42, 24);
+    color: white;
+}
+
+/*image logo is from google so I can attached a URL in my sample web page.
+Though I can create my own sample but I didn't give time yet for getting my own URL*/
+#header-img {
+    width: 140px;
+    height: 140px;
+    padding-top: 5px;
+}
+
+#nav-bar {
+    width: auto;
+    height: 100%;
+    float: right;
+}
+
+.nav-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    visibility: hidden;
+   
+}
+
+.nav-list {
+    font-size: 1.05rem;
+    font-weight: 100;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    visibility: visible;
+    margin-bottom: 20px;
+}
+
+.nav-list .items:first-of-type {
+    margin: auto 30px;
+}
+
+.nav-list .items:first-of-type:hover {
+    padding: 5px;
+    background-color: rgb(124, 99, 54);
+    color: white;
+}
+
+.nav-list .nav-link {
+    margin: auto 30px;
+    padding: 5px;
+}
+
+.items:first-of-type .nav-link {
+    margin: 0;
+    padding: 0;
+}
+
+.items .nav-link {
+    text-decoration: none;  
+    color: black;
+}
+
+.beans-drpdown {
+    height: auto;
+    position: relative;
+}
+
+#beans-content {
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: -25px;
+    background-color: white;
+    box-shadow: 0 5px 15px -10px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.beans-type {
+    display: block;
+    padding: 8px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.beans-type:first-of-type {
+    margin-top: 20px;
+    padding: 5px auto;
+}
+.beans-type:last-of-type {
+    padding-bottom: 10px;
+}
+
+.nav-list .nav-link:hover,
+.items:first-of-type:hover {
+    background-color: rgb(124, 99, 54);
+    color: white;
+    cursor: pointer;
+}
+
+.items:hover #beans-content {
+    display: block;
+    color: black;
+}
+
+.beans-type:hover {
+    background-color: rgba(100, 72, 21, 0.1);
+    color: black;
+}
+
+/*----------------FORM-SECTIONS--------------*/
+
+.form-section {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.coffee-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+.overlapping-text-and-input {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: rgb(36, 36, 36);
+    color: whitesmoke;
+    box-shadow: 0 10px 30px -25px;
+    margin: -80px auto auto;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.form-section img, h2, input {
+    display: block;
+    margin: auto;
+}
+
+.form-section .text {
+    padding: 20px 15px 10px;
+}
+
+.overlapping-text-and-input .icons {
+    width: 100%;
+    height: auto;
+}
+
+.overlapping-text-and-input h3 {
+    display: inline-block;
+    font-size: 1.05rem;
+    font-weight: 100;
+    color: rgb(165, 164, 164);
+    padding: 5px 25px 10px;
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 50%;
+    font-size: .9rem;
+    padding: 5px;
+    text-align: center;
+}
+
+input[type='submit'] {
+   font-size: .9rem;
+   letter-spacing: 2px;
+   font-weight: 600;
+   padding: 5px;
+   cursor: pointer;
+   margin-top: 10px;
+   background-color: rgb(238, 191, 47);
+   border: 1px solid rgb(68, 68, 68);
+}
+
+input[type='submit']:hover {
+    background-color: rgb(241, 207, 105);;
+}
+
+/*----------------BEANS-SECTIONS (ARABICA/ROBUSTA)--------------*/
+
+.beans-section {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.arabica-container,
+.robusta-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.arabica-image,
+.robusta-image {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px 40px;
+}
+
+.beans-section h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    padding: 5px;
+}
+
+.beans-section .description {
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.beans-section .parenthesis {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+.robusta-image {
+    float: right;
+}
+
+.robusta-container {
+    margin-top: 60px;
+}
+
+/*-----------VIDEO / ROASTING PROCESSS-------------*/
+
+.roasting-section {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    padding-top: 20px;
+    background-color: rgb(156, 147, 131);
+    color: rgb(24, 24, 24);
+}
+
+.roasting-section .text {
+    text-align: center;
+    padding: .6rem;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+.video-wrapper {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+#video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+/*-----------PRICING-------------*/
+
+#pricing-section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.grid-display-wrapper {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 50px;
+    margin: 50px auto;
+    padding: 30px 50px;
+}
+
+.image-bag {
+    width: 100%;
+    height: auto;
+}
+
+.box-item {
+    text-align: center;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0 2px 25px -15px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.item-name {
+    padding: 15px 0;
+}
+
+.item-description {
+    padding: 5px;
+    font-weight: 100;
+    color: rgb(123, 121, 121);
+}
+
+.item-price {
+    padding: 5px;
+}
+
+/*---------------FOOTER---------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.unordered-list-wrapper {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: end;
+}
+
+footer .unordered-list {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 20px
+}
+
+.footer-list-item {
+    display: inline-block;
+    padding: 15px 15px 5px;
+    cursor: pointer;
+}
+
+.footer-text {
+    margin-right: 25px;
+    padding: 5px 10px 15px;
+    font-size: .8rem;
+    color: rgb(90, 89, 89);
+}
+
+/*------------------MEDIA QUERIES--------------------*/
+
+@media(max-width: 900px) {
+
+    .nav-icon {
+        visibility: visible;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #header {
+        width: 100%;
+        left: 0;
+    }
+
+    #nav-bar {
+        height: auto;
+        background-color: rgb(228, 228, 228);
+    }
+
+    .nav-list {
+        width: 210px;
+        height: auto;
+        flex-direction: column;
+        position: absolute;
+        left: -150px;
+        top: 40px;
+        display: none;
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 1px 5px -3px;
+    }
+
+    .nav-list .items {
+        width: 100%;
+    }
+
+    .nav-list .items:first-of-type {
+        margin: 0;
+        padding: 10px 30px;
+    }
+
+    .nav-list .nav-link {
+        display: block;
+        margin: 0;
+        padding: 10px 30px;
+    }
+
+    .beans-drpdown {
+        width: 150px;
+        height: auto;
+    }
+
+    #beans-content {
+        width: 150%;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: left;
+        text-indent: 25px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: none;
+        top: 10px;
+        left: -30px;
+    }
+
+    #beans-content .beans-type {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .nav-icon:hover {
+        background-color: rgb(240, 239, 237);
+    }
+
+    .nav-icon:hover .nav-list {
+        display: block;
+    }
+
+    .nav-list .items:first-of-type:hover {
+        margin: 5px auto;
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .arabica-image,
+    .robusta-image {
+        height: auto;
+        margin: auto;
+        float: none;
+        display: block;
+        border-radius: 0;
+    }
+
+    .beans-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .item-name {
+        padding: 0;
+        font-size: medium;
+    }
+
+    .roasting-section .text {
+        font-size: 1.5rem;
+    }
+}
